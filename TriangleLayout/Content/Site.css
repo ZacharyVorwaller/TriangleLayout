@@ -29,3 +29,49 @@ textarea {
         padding: 0;
     }
 }
+
+.results{
+    line-height:11px;
+}
+
+.highlighted-right:after {  
+    border-top: 500px solid #DDDDDD !important;
+}
+.triangle-right {
+    float:left;
+    padding-right:1px;
+    padding-bottom:1px;
+    width: 0;
+    height: 0;    
+    overflow: hidden;
+    
+}
+.triangle-right:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+    
+    border-left: 500px solid transparent;
+    border-top: 500px solid #999999;
+}
+.highlighted-left:after {  
+    border-top: 500px solid #DDDDDD !important;
+}
+.triangle-left {
+    float:left;
+    padding-right:1px;
+    padding-bottom:1px;
+    height: 0;    
+    overflow: hidden;
+}
+.triangle-left:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #999999;
+}
